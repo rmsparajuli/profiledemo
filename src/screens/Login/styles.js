@@ -2,41 +2,82 @@ import { StyleSheet } from "react-native";
 import configs from "../../config";
 
 const styles = StyleSheet.create({
-  container: {
+  text: {
+    fontSize: configs.Normal_Text_Size,
+    color: configs.Primary_Color_Red
+  },
+  textSecond: {
+    fontSize: configs.Normal_Text_Size,
+    color: configs.Placeholder_Color,
+    marginHorizontal: 10,
+  },
+  loginskipText: {
+    fontSize: configs.Normal_Text_Size,
+    color: configs.Primary_Color_White
+  },
+  logoView: {
+    justifyContent: 'center',
     alignItems: "center",
+    margin: 40,
+    height: 120,
+    width: 250,
+  },
+  logo: {
+    height: '100%',
+    width: '100%'
+  },
+  _forgetPass: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 10
+  },
+  _loginSkip: {
+    flexDirection: 'row',
+    flex: 1,
     justifyContent: "center",
-    flex: 1
+    alignItems: "center",
+    marginTop: 20,
   },
-  forgetContainer: {
-    flexDirection: "row",
-    paddingVertical: 10,
-    alignSelf: "center"
+  _login: {
+    marginRight: 10,
+
+    borderRadius: 5,
+    width: 140,
+    padding: 5,
+    height: configs.Button_Height,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
-  forgetText1: {
-    fontSize: 12,
-    color: "#666"
+  _strikeLine: {
+    textDecorationLine: 'line-through'
   },
-  forgetText2: {
-    fontWeight: "bold",
-    fontSize: 12,
-    paddingLeft: 5
+  _strikeView: {
+    flexDirection: 'row'
   },
-  or: {
-    paddingVertical: 10
+  _otherLoginView: {
+    borderWidth: 0,
+    marginTop: 20,
+    alignItems: 'center'
   },
-  fbLoginText: {
-    color: configs.Primary_Color,
-    fontSize: 12,
-    fontWeight: "600"
+  _facebookGamilView:{
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'center',
   },
-  demoLogo: {
-    height: 50,
-    width: configs.Button_Width / 2,
-    paddingBottom: 100,
-    // borderWidth: 1,
-    borderColor: 'black',
-    
+  _facebookGamilLogo:{
+    height:'100%',
+    width:'100%',  
+  },
+  _facebookGamilTouch:{
+    // borderWidth:1,
+    margin:5,
+    height:50,
+    width:50,
+    borderRadius:25,
+    alignItems:'center',
+    padding:10,
+    justifyContent:'center',
   }
-});
+})
 
 export default styles;
